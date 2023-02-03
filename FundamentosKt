@@ -1,1 +1,26 @@
-
+/**
+ * You can edit, run, and share this code.
+ * play.kotlinlang.org
+ */
+fun main() {
+    
+    //o // serve para comentar apenas uma linha
+    /*
+     * para 
+     * comentar
+     * mais 
+     * de 
+     * uma
+     * limha*/
+println("Olá Ana, tudo bem?")
+         println ("Sim, estou muito bem! Mas ainda tenho muito o que fazer estudar")
+         println ("fazer lição e")
+         println ("ir para a aula de piano... ")
+         println ("É parece que você tem várias coisas para fazer, mais eu não.Até estou assistindo televisão, onde se tem uma propaganda sobre videogames e tecnologia sempre no mesmo canal que assisto todo dia")
+         println ("Bom, agora tenho que ir, minha mãe está me esperando, ela irá me ajudar na lição de casa.")
+         println ("Bom e sobre o que a lição")
+         println("sobre a copa do mundo")
+         println("o lionel messi ganhou a copa, mai mesmo assim eu predfiro o CR7, e vc prefere qual?")
+         println("prefiro o Neymar")
+        println("Ata")
+                  }
