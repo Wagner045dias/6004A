@@ -368,8 +368,78 @@ class Animal(
         }
     }
   
+    --------------------------------------------------------------------------------------
+    fun main() {
+
+
+    var usuario = ContaBanco(-100.0, 1456156754784564156, 5018)
+    usuario.consultarSaldo(5018)
+    usuario.deposito(5018, 2.0)
+    usuario.consultarSaldo(5018)
+}
+
+class ContaBanco(var saldo: Double, var numeroConta: Long, var senhaCorreta: Int){ 
+
+    fun consultarSaldo(senha: Int){
+
+        if(senha == senhaCorreta){
+            println("Saldo: R$$saldo")
+        }else{
+            println("Senha Incorreta")
+        }
+    }
     
     
+    fun deposito(senha: Int, valor: Double){
+        
+        if(senha == senhaCorreta){
+            if(valor <= 0){
+               println("deposito no R$$valor impossivel de ser realizado") 
+            }else{
+            saldo = valor
+            println("deposito no R$$valor realizado com sucesso")
+            }
+            
+        }else{
+            println("Senha Incorreta")
+        }
+        
+    }
+    
+    
+    
+    //Exercicio -> faça um metodo de sacar dinheiro na conta do banco
+    
+    fun saque(senha: Int, valor: Double){
+        
+        if(senha == senhaCorreta){
+            if(valor <= 0){
+               println("Saque no R$$valor impossivel de ser realizado") 
+            }else if(valor > saldo){
+                println("Saque de R$$valor impossivel de ser realizado")
+            }else{
+                saldo = valor
+            println("deposito no R$$valor realizado com sucesso")
+            }
+            
+        }else{
+            println("Senha Incorreta")
+        }
+        
+    }
+    
+}
+    
+    
+
+
+
+
+
+
+
+
+
     
     
     
